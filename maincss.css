@@ -1,0 +1,164 @@
+h2,
+tr {
+    text-align: center;
+}
+
+h1 {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navigator,
+#content {
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    top: 20px;
+    position: relative;
+    
+}
+
+
+#tableOfDefinitions {
+    top: 60px;
+    position: relative;
+    border: 1px solid gainsboro;
+    border-right: 3px solid gainsboro;
+    border-bottom: 3px solid gainsboro;
+    border-spacing: 0;
+    border-radius: 5px;
+}
+
+#form {
+    position: relative;
+    top: 60px;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-name: fadeIn;
+    animation-delay: 3s;
+    text-align: center;
+    animation-duration: 3s;
+}
+
+.defItem,
+td,
+th{
+    border-right: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+}
+#pageNavigator{
+    float: left;
+    position: -webkit-sticky;
+    position: sticky;
+    top:0;
+    left: 0;
+    height:100%;
+    border:10px solid black;
+    position: fixed;
+    background-color: rgb(3, 95, 95);
+    z-index: 1;
+}
+#navigator #group1,
+#navigator #group2,
+#navigator #group3,
+#navigator #group4 {
+    border: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a:link {
+    color: blanchedalmond;
+}
+
+#navigator #group1 div, 
+#navigator #group2 div,
+#navigator #group3 div,
+#navigator #group4 div{
+    background-color: rgb(9, 23, 97);
+    position: relative;
+    height: 32px;
+    width: 85px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-right: 5px solid black;
+    border-bottom: 6px solid black;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: auto;
+    padding-bottom: auto;
+
+    color: azure;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#navigator a:hover ul {
+    opacity: 100%;
+    background-color: rgb(32, 143, 180);
+}
+
+a:hover {
+    opacity: 100%;
+}
+
+a {
+    opacity: 75%;
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgba(249, 217, 62, 0.607);
+}
+
+body {
+    background-color: rgb(180, 227, 250);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to top, rgb(180, 227, 250), rgb(27, 24, 96));
+    color: mintcream;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+html,body{
+    height: 100%;
+}
+
+#feedback {
+    width: 30%;
+    padding-bottom: 100px;
+    line-height: 10px;
+}
+
+input[type="text"] {
+    resize: none;
+    padding: 5px 5px;
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100;
+    }
+}
